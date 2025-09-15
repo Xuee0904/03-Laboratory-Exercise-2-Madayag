@@ -203,7 +203,7 @@
             // 
             // ViewProductListGrid
             // 
-            this.ViewProductListGrid.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ViewProductListGrid.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.ViewProductListGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ViewProductListGrid.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.ViewProductListGrid.Location = new System.Drawing.Point(20, 404);

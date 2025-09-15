@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace _03_Laboratory_Exercise_2_Madayag
 {
@@ -27,7 +28,33 @@ namespace _03_Laboratory_Exercise_2_Madayag
             label6.ForeColor = ColorTranslator.FromHtml("#363636");
             label7.ForeColor = ColorTranslator.FromHtml("#363636");
             label8.ForeColor = ColorTranslator.FromHtml("#363636");
+
+            string[] ListOfProductCategory = new string[]
+            {
+                "Beverages",
+                "Bread/Bakery",
+                "Canned/Jarred Goods",
+                "Dairy",
+                "Frozen Goods",
+                "Meat",
+                "Personal Care",
+                "Other"
+            };
+            foreach (string ProductCategory in ListOfProductCategory)
+            {
+                CategoryCB.Items.Add(ProductCategory);
+            }
         }
+
+        private string _ProductName;
+        private string _Category;
+        private string _MfgDate;
+        private string _ExpDate;
+        private string _Description;
+        private int _Quantity;
+        private double _SellPrice;
+
+        BindingSource showProductList = new BindingSource();
 
         private void Inventory_Load(object sender, EventArgs e)
         {
