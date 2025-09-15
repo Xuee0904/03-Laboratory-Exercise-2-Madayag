@@ -42,7 +42,7 @@
             this.ExpDatePicker = new System.Windows.Forms.DateTimePicker();
             this.QuantityText = new System.Windows.Forms.TextBox();
             this.SellPriceText = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.DescriptionRichText = new System.Windows.Forms.RichTextBox();
             this.AddProductButton = new System.Windows.Forms.Button();
             this.ViewProductListGrid = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ViewProductListGrid)).BeginInit();
@@ -181,14 +181,14 @@
             this.SellPriceText.Size = new System.Drawing.Size(285, 23);
             this.SellPriceText.TabIndex = 13;
             // 
-            // richTextBox1
+            // DescriptionRichText
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Location = new System.Drawing.Point(17, 235);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(587, 109);
-            this.richTextBox1.TabIndex = 14;
-            this.richTextBox1.Text = "";
+            this.DescriptionRichText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DescriptionRichText.Location = new System.Drawing.Point(17, 235);
+            this.DescriptionRichText.Name = "DescriptionRichText";
+            this.DescriptionRichText.Size = new System.Drawing.Size(587, 109);
+            this.DescriptionRichText.TabIndex = 14;
+            this.DescriptionRichText.Text = "";
             // 
             // AddProductButton
             // 
@@ -200,6 +200,7 @@
             this.AddProductButton.TabIndex = 15;
             this.AddProductButton.Text = "ADD PRODUCT";
             this.AddProductButton.UseVisualStyleBackColor = true;
+            this.AddProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
             // 
             // ViewProductListGrid
             // 
@@ -218,7 +219,7 @@
             this.ClientSize = new System.Drawing.Size(638, 540);
             this.Controls.Add(this.ViewProductListGrid);
             this.Controls.Add(this.AddProductButton);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.DescriptionRichText);
             this.Controls.Add(this.SellPriceText);
             this.Controls.Add(this.QuantityText);
             this.Controls.Add(this.ExpDatePicker);
@@ -258,7 +259,7 @@
         private System.Windows.Forms.DateTimePicker ExpDatePicker;
         private System.Windows.Forms.TextBox QuantityText;
         private System.Windows.Forms.TextBox SellPriceText;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox DescriptionRichText;
         private System.Windows.Forms.Button AddProductButton;
         private System.Windows.Forms.DataGridView ViewProductListGrid;
     }
